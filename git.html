@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<head>
+  <title>Your page title here</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="your-stylesheet-link-here.css">
+</head>
+<body>
+  <main>
+    <h1>Version Control, Git, and GitHub</h1>
+    <h2>Keep track of your sheep!</h2>
+    <h4>February 11, 2016</h4>
+
+    <section>
+      <p>
+       Even outside the realm of programming, version control is so important in creating a clean, organized, and track-able workflow. Whether it's a single-page app, or just a simple graphic design project, you'll inevitably be making revisions, trying out different approaches, and fixing errors along the way, and you want to be able to keep track of your project's different states along the way. To illustrate my point, I'll start with some sheep.
+   </p>
+   <img src="sheep.jpg" width="100" height="400">
+   <p>Let's say my friend enlists me to create a cute sheep graphic. After working for a bit, I have a basic drawing of a sheep that I like. I decide to color it in and make it a black sheep. It's looking good, so I keep going, and add some stars to the sheep. I save it, and send it to my friend. However, she actually wants hearts on her sheep, not stars (A Valentine's Day sheep?). Instead of going back in, deleting all the stars, and adding in the hearts, would it be easier if I could just go back to the stage BEFORE I added the stars, and only worry about adding hearts? </p>
+
+<p>The answer is: YES! It would be easier. And, although this example is infinitesimally simpler than the challenges programmers face while working on a project, it speaks to the benefits of version control.</p>
+
+<p>Version control allows us to take "snapshots" of our work at various stages in a project's life, save them, and roll back to that state if necessary. If a project is chugging along, and a new feature is introduced that makes the whole thing break, it saves everyone a tremendous amount of grief to be able to go back to an earlier stage when things were working, and try a different approach. </p>
+
+<p>This "safety net" is at the heart of what makes Git so useful to programmers. Aside from debugging, Git also provides us with so many useful and powerful commands that help us manage our work. </p>
+
+<p>Before expounding all the amazing ways Git helps you manage your code, a bit of clarification: Git is version control software that is local to your computer, and GitHub, which I'll address in further detail soon, is a web-based git repository service. You push things up to GitHub using Git commands in your command line. </p>
+
+<p>Back to all the ways Git can help make your life easier while coding. Once you've created a git repository for your project (by typing "git init" in your command line), typing in "git add filenamehere" will make Git keep an eye on all your work in those files.  A simple "git commit" with a message about what you did at that stage (written in the present tense, of course!) saves a snapshot of your code at that stage with your notes about what was being done then. These commits help you track your code, and figure out where things went wrong. Typing "git log" in your command line lets you see all past commits made to that repository, each with a unique hash. </p>
+
+<p>One of my favorite things, and something I consider incredibly helpful, are Git's branches. Branches are exactly what they sound like-- allowing you to "branch off," and work on an aspect of the project without affecting the master files. If all goes well, you can merge your branch with the master so everything is up to date. If something goes totally wrong (which it might), no harm is done. Branches are also integral to working on projects in teams, as is done so often. Each member of a team can work on their own branch, allowing members to see who is responsible for what. Or, you may choose to devote a few separate branches to a few possible solutions to a problem, and choose which branch you'd like to pursue. It's a thing of beauty!</p>
+
+<p>Speaking of teams, GitHub, the web-based repository hosting service makes it incredibly easy for teams to share code and work on the same project at once. Someone doing work on a project can pull the code down from GitHub (git pull), do some work, and push it back up when done (git push). One of the things I personally love about using GitHub is that I can work on the same project on different computers. Gone are the days of working on something on my work computer, uploading it to Google Drive (or worse, emailing it to myself), downloading it, and working on it at home. By using GitHub, all it takes is a simple git pull to get my work in its latest state whatever computer I happen to be in front of. Furthermore, because GitHub stores your code in the cloud, your work is safe. In the unfortunate event that an entire project of yours is saved locally, and your computer is stolen, or completely crashes, you'll have a tough time getting that work back. If your project lives in a repo on GitHub, you'll be back to pulling, committing, and pushing in no time. </p>
+
+<p>Lastly, GitHub fosters a collaborative environment among programmers and designers, allowing us all to share our work, learn from each other, exchange valuable feedback, and build remarkable things!</p>
+
+
+      </section>
+    </main>
+  </body>
+  </html>
