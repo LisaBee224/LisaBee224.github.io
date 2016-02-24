@@ -1,7 +1,13 @@
 html{
 background: linear-gradient(135deg, rgba(229,227,247,1) 0%, rgba(229,227,247,1) 24%, rgba(115,182,234,1) 75%, rgba(59,160,227,1) 100%);
 
+
 }
+a{
+  text-decoration:none;
+  color:#333;
+}
+
 header{
     font-family: 'Raleway', sans-serif;
   font-size:2em;
