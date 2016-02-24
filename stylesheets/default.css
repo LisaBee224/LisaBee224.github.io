@@ -20,15 +20,20 @@ header{
 #main{
   float:right;
  width:auto;
-  padding-top: 3.208333333%;
-  padding-right: 5.208333333%;
-}
+margin-top:-50%;
+  position:relative;
+  z-index:-2;
 
+
+}
 
 nav{
   padding-top: 3.208333333%;
   font-family: 'Raleway', sans-serif;
   font-size:3em;
+
+
+
 }
 nav ul{
 margin-left:-1%;
