@@ -3,6 +3,11 @@ background: linear-gradient(135deg, rgba(229,227,247,1) 0%, rgba(229,227,247,1) 
 
 
 }
+body{
+height:100%;
+width: auto;
+}
+
 a{
   text-decoration:none;
   color:#333;
@@ -80,3 +85,4 @@ nav ul li a:hover{
   display: inline;
   padding:1%;
 }
+

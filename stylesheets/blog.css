@@ -8,16 +8,36 @@ a{
   text-decoration:none;
   color:#333;
 }
+#blogindex{
+  width: 90%;
+}
+
+#blogindex ul{
+  padding-left:0;
+}
+
+#blogindex ul li{
+  display:inline-block;
+  background-color: transparent;
+    border: 1px solid #fff;
+}
+
+#blogindex ul li a{
+font-size: .6em;
+text-align:center;
+}
 body main{
   width:65%;
   margin: 5% 0 10% 10%;
 }
+
 body main p{
   line-height:150%;
   font-size:1.15em;
   text-align:justify;
   overflow:auto;
 }
+
 body main img{
  float:left;
  margin-right:2%;
