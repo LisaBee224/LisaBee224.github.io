@@ -72,8 +72,7 @@ body main img{
  float:left;
  margin-right:2%;
  padding:1em;
- width:5em;
- height:15em;
+
 }
 
 main section{
@@ -85,9 +84,34 @@ main section{
 
 main section p{
 font-size: .6em;
+display:inline-block;
+}
+main section p .emph{
+  font-size: 1.6em;
+  font-weight:bold;
+  display:inline block;
+}
+
+main section ul{
+  list-style:none;
+}
+main section ul li{
+  font-size:.75em;
+  margin-bottom:1em;
 }
 footer{
   position:absolute;
   bottom:0;
   left:0
-  right:0;
+}
+
+section #resources{
+margin-left:0;
+padding-left:0;
+border-left: none;
+  font-size:1.5em;
+  margin-bottom:2em;
+}
+section #resources h3{
+font-size:.5em;
+}
