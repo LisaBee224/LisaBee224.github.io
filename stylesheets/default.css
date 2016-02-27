@@ -1,6 +1,5 @@
 html{
-background: linear-gradient(135deg, rgba(229,227,247,1) 0%, rgba(229,227,247,1) 24%, rgba(115,182,234,1) 75%, rgba(59,160,227,1) 100%);
-
+background: linear-gradient(to left, #ddd6f3 , #faaca8);
 
 }
 body{
@@ -16,26 +15,44 @@ a{
 header{
     font-family: 'Raleway', sans-serif;
   font-size:2em;
-  line-height:40%;
-  margin:5.208333333%;
-  color:#333;
+  line-height:10%;
+margin-left:2%;
+  color:#fff;
 
+
+}
+header h2{
+  width:20%;
+  line-height:120%;
+  font-size:1em;
 }
 
 #main{
   float:right;
  width:auto;
-margin-top:-50%;
-  position:relative;
-  z-index:-2;
+ display:inline-block;
 
+
+  z-index:-2;
 
 }
 
+#main img{
+  display:inline-block;
+  width: 68em;
+  height:42em;
+  margin-left:.8em;
+  margin-top:-8em;
+  z-index:-1;
+}
 nav{
-  padding-top: 3.208333333%;
+  padding-top: 1.208333333%;
   font-family: 'Raleway', sans-serif;
   font-size:3em;
+
+  z-index:-3;
+  width:110%;
+
 
 
 
@@ -44,14 +61,16 @@ nav ul{
 margin-left:-1%;
   padding-left:0;
   text-align:center;
+  position:relative;
+
 }
 
 nav ul li{
   list-style:none;
-background:#fff;
+background:#f2dcf0;
   border-radius:8px;
-  width:25%;
-  padding:1.8%;
+  width:20%;
+  padding:2%;
   margin-bottom:2%;
   text-align:right;
 }
@@ -73,16 +92,32 @@ nav ul li a:hover{
 
 }
 
-#social ul{
+ #social{
+  width:25%;
+  margin-top:5%;
+  margin-bottom:5%;
   list-style:none;
   padding-left:0;
-    margin-left: 5.2083333333%;
-    margin-top:5%;
 
+
+
+
+text-align:center;
 }
 
-#social ul li{
-  display: inline;
+ #social  li{
+  display: inline-block;
   padding:1%;
+  z-index:5;
+}
+
+nav footer{
+  color:#fff;
+font-size:15px;
+position:relative;
+margin-left:2%;
+margin-top:35%;
+padding-bottom:40%;
+
 }
 
