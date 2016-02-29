@@ -2,9 +2,11 @@ html{
 background: linear-gradient(to left, #ddd6f3 , #faaca8);
 
 }
-body{
+div{
 height:100%;
 width: auto;
+background:url("../imgs/mountainbg2.png");
+background-repeat:no-repeat;
 }
 
 a{
@@ -13,49 +15,24 @@ a{
 }
 
 header{
-    font-family: 'Raleway', sans-serif;
-  font-size:2em;
+  font-family: 'Raleway', sans-serif;
+  font-size:1.65em;
   line-height:10%;
-margin-left:2%;
+  margin:3em;
   color:#fff;
-
-
 }
+
 header h2{
   width:20%;
   line-height:120%;
-  font-size:1em;
+  font-size:1.4em;
 }
 
-#main{
-  float:right;
- width:auto;
- display:inline-block;
-
-
-  z-index:-2;
-
-}
-
-#main img{
-  display:inline-block;
-  width: 68em;
-  height:42em;
-  margin-left:.8em;
-  margin-top:-8em;
-  z-index:-1;
-}
 nav{
-  padding-top: 1.208333333%;
   font-family: 'Raleway', sans-serif;
-  font-size:3em;
-
+  font-size:2em;
   z-index:-3;
   width:110%;
-
-
-
-
 }
 nav ul{
 margin-left:-1%;
@@ -68,34 +45,42 @@ margin-left:-1%;
 nav ul li{
   list-style:none;
 background:#f2dcf0;
-  border-radius:8px;
+  border-radius:20px;
   width:20%;
   padding:2%;
-  margin-bottom:2%;
+  margin-bottom:.3em;
   text-align:right;
 }
 
 nav ul li:hover{
   background: #333;
   color:#fff;
+  transition:0.65s;
 
+}
+nav ul li:hover{
+   width:23%;
+   transition:1s;
+}
+
+nav ul li:hover a{
+  color:#fff;
+  transition: 0.65s;
 }
 
 nav ul li a{
+  width:100%;
   text-decoration:none;
   color: #333;
-
 }
 nav ul li a:hover{
-
   color: #fff;
 
 }
 
  #social{
+  float:right;
   width:25%;
-  margin-top:5%;
-  margin-bottom:5%;
   list-style:none;
   padding-left:0;
 text-align:center;
