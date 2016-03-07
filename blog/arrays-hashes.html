@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<head>
+  <title>Your page title here</title>
+  <meta charset="UTF-8">
+  <link href='https://fonts.googleapis.com/css?family=Raleway:300' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
+</head>
+<body>
+  <main>
+    <header class ="entryheader">
+    <h3><a href="index.html">back to index</a></h3>
+    <h1>Arrays and Hashes</h1>
+    <h2>Keepin' you and your data organized</h2>
+    <date>March 4, 2016</date>
+
+    <section id="profile">
+<img src="../imgs/lisablog.png">
+<h4>Lisa Buch</h4>
+<h5><a href="../index.html" target="_blank">view my portfolio</a></h4>
+    </section>
+</header>
+    <section>
+      <p>
+       Arrays and hashes are so useful in many different languages (although they may go by different names--a hash in Python, for example, is a "dictionary"). Although both provide powerful ways to organize and store data, they have some key differences that are important to understand. </p>
+   <p>As a simple example, let's pretend I'm developing some kind of app to organize my music-- kind of like a digital "CD shelf."</p><p> If I just wanted to compile all the artists and bands that are in my current CD collection, I'd probably use an <span class="emph"> array. </span> Arrays are essentially just a list of data, and the data is not necessarily in any kind of order. You can certainly call methods on arrays to manipulate the data and sort it in certain ways, but we don't need to get into that now. Here's an example of what my array might look like: </p>
+
+   <p><img src="../imgs/array1.png" width="700px" height="140px"></p>
+   <p>In this example, the name of my array is "bands." "Bands" contains strings that all represent a band or an artist that I love. All the members are enclosed by square brackets:
+  <code>[ ]</code></p>
+    <p>Pretty simple!</p>
+   <p>And just note, arrays do not need to contain the same kind of data throughout-- they can contain all kinds of classes mixed together. Just to illustrate this point, here are some random integers mixed into my array. </p>
+    <img src="../imgs/array2.png" width="700px" height="160px">
+    <p>Integers and David Bowie play great together-- are you surprised?</p>
+
+   <p>My array isn't really in any kind of order-- it isn't alphabetized, or dated chronologically or anything like that. What if I wanted to, or needed to know, what the third band in my array is? I would simply call that member by its <span class="emp"> index.</span> An index is simply the "nth" member of the array. Since Ruby, like almost all languages, run on 0-based counting, Neil Young is represented by index 0 in my array, David Bowie is represented by index 1, and so on. So what if I wanted to see who was third in my bands array? I would need to reference:</p>
+   <pre><code> bands[2] </code></pre>
+<p>Let's give it a shot!</p>
+<img src="../imgs/array3.png" width="700px" height="160px">
+<img src="../imgs/array4.png" width="700px" height="80px">
+<p>It turns out The Grateful Dead are third in my array.</p>
+<p>I can also look up multiple members of my array at once, as shown here.
+  <img src="../imgs/array5.png" width="700px" height="200px">
+<img src="../imgs/array6.png" width="700px" height="150px">
+</p>
+
+<p>OK, so let's move on to hashes. Hashes are also collections of data, but they are organized into key:value pairs. Keys are unique, and they are paired to specific values.</p>
+  <aside>Although I'm Ruby through-and-through these days, I do think that Python referring to a hash as a "dictionary" semantically makes a little more sense-- a dictionary as we know it is a book filled with unique words, each paired to one or more definitions. </aside>
+<p>Hashes are enclosed by curly brackets:</p>
+<pre><code> {  }</code></pre>
+    <p>and keys and values are separated by the following, sort of like a little arrow:</p>
+ <pre><code> => </code></pre>
+  </p>
+  <p>So going back to my CD shelf idea, if I wanted to include not only the bands and artists in my collection, but also their albums, I could use a hash. Below is an example of a hash called "cd_shelf" that indicates the bands/artists and their respective albums that are in my collection:
+<img src="../imgs/hash8.png" width="800px" height="150px">
+In this example, you can see that I've added in the albums I have for each artist. On line 5, I'm going to look up what Wilco albums I have by referring to the key "Wilco." Will this work?
+<br>
+drumroll, please...
+<br>
+<img src="../imgs/hash9.png" width="700px" height="80px">
+Sure enough, my Wilco albums show up.</p>
+<p>And, if I want to look up what albums I've got for more than one artist, I just make two calls to their respective keys, as seen below.</p>
+<img src="../imgs/hash10.png" width="750px" height="150px">
+<img src="../imgs/hash11.png" width="700px" height="100px">
+   <p>Each set of albums will print on a new line.</p>
+   <p>Just like arrays, you can call all kinds of methods on hashes, and manipulate them as you like.</p>
+
+<p>That's a basic overview of hashes and arrays! If you are interested in any kind of data organization and manipulation, they'll certainly be "key," and of great "value" to your future projects (sorry, I couldn't help myself!) Happy coding!</p>
+
+<section id="resources"><h3>Helpful links:</h3>
+  <a href="http://www.sitepoint.com/guide-ruby-collections-ii-hashes-sets-ranges/" target="_blank">more information on hashes and arrays </a>
+
+</section>
+
+<a href="index.html">< go back</a>
+
+      </section>
+    </main>
+  </body>
+  </html>
