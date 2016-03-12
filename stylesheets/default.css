@@ -1,13 +1,35 @@
 html{
-background: linear-gradient(to left, #ddd6f3 , #faaca8);
+
+position:relative;
+
 
 }
-div{
-height:100%;
-width: auto;
-background:url("../imgs/mountainbg2.png");
-background-repeat:no-repeat;
+body{
+
+background: linear-gradient(221deg, #d3edac, #d989b4, #97b8ec);
+background-size: 300% 300%;
+
+-webkit-animation: AnimationName 60s ease infinite;
+-moz-animation: AnimationName 60s ease infinite;
+animation: AnimationName 60s ease infinite;
 }
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 99%}
+    50%{background-position:100% 2%}
+    100%{background-position:0% 99%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 99%}
+    50%{background-position:100% 2%}
+    100%{background-position:0% 99%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 99%}
+    50%{background-position:100% 2%}
+    100%{background-position:0% 99%}
+}
+}
+
 
 a{
   text-decoration:none;
@@ -29,10 +51,12 @@ header h2{
 }
 
 nav{
+
   font-family: 'Raleway', sans-serif;
   font-size:2em;
   z-index:-3;
-  width:110%;
+  width:auto;
+
 }
 nav ul{
 margin-left:-1%;
@@ -41,15 +65,21 @@ margin-left:-1%;
   position:relative;
 
 }
-
+#mountain{
+  width:auto;
+ position:absolute;
+ right:0;
+}
 nav ul li{
   list-style:none;
-background:#f2dcf0;
-  border-radius:20px;
-  width:20%;
+border:3px solid #fff;
+  border-radius:5px;
+  width:10%;
   padding:2%;
   margin-bottom:.3em;
-  text-align:right;
+  text-align:center;
+  display:inline-block;
+  color:#fff;
 }
 
 nav ul li:hover{
@@ -71,7 +101,7 @@ nav ul li:hover a{
 nav ul li a{
   width:100%;
   text-decoration:none;
-  color: #333;
+  color: #fff;
 }
 nav ul li a:hover{
   color: #fff;
@@ -92,13 +122,12 @@ text-align:center;
   z-index:5;
 }
 
-nav footer{
+div footer{
+
   color:#fff;
 font-size:15px;
-position:relative;
-margin-left:2%;
-margin-top:35%;
-padding-bottom:40%;
+position:absolute;
+margin-bottom:0;
 
 }
 

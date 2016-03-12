@@ -105,12 +105,12 @@ horizontal-align:center;
 }
 body main{
   width:65%;
-  margin: 5% 0 10% 10%;
+  margin: 5% 0 0% 10%;
 }
 
 body main img{
 float:left;
- padding:1em;
+ padding:2em;
 }
 
 main section{
@@ -124,6 +124,7 @@ main section p{
   line-height:180%;
   text-align:justify;
 font-size: .6em;
+display:inline-block;
 
 }
 
@@ -141,7 +142,44 @@ main section ul li{
   font-size:.75em;
   margin-bottom:1em;
 }
+main section ol {
+  font-size:.6em;
+}
+main section ol li .pre pre{
+  font-size:1em;
+  padding-top: 0.5%;
+  padding-bottom:0.5%;
 
+  padding-right:30%;
+}
+aside{
+  margin:8%;
+  padding:2%;
+  font-style:italic;
+  font-size: .75em;
+  background-color:#fffce5;
+  color:#333;
+  border-radius: 10px;
+}
+.pre{
+  width:auto;
+  background-color:#e5dae2;
+  background-image:none;
+  border-radius:5px;
+  padding-left:2%;
+  display:inline-block;
+  font-size:.6em;
+}
+.pre pre{
+  white-space: pre-wrap;
+  font-family: Courier;
+  font-size:.6em;
+  width:100%;
+  padding-top: 0.5%;
+  padding-bottom:0.5%;
+padding-left:4%;
+  padding-right:4%;
+}
 
 footer{
   position:absolute;
@@ -149,17 +187,21 @@ footer{
   left:1em;
 }
 
-section #resources{
-margin-left:0;
+#resources{
+margin-left:15%;
 padding-left:0;
-border-left: none;
-  font-size:1.5em;
+border-left: none ;
+  font-size:1em;
   margin-bottom:2em;
 }
 
-section #resources h3{
-font-size:.5em;
+
+#resources h3{
+font-size:1.6em;
+
+
 }
+
 
 #home{
   margin:3em;
