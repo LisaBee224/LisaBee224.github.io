@@ -24,7 +24,7 @@
     </section>
     </header>
   <section>
-
+<img src="bottles.jpg" width="400" height="250">
 <p>One of Ruby's biggest workhorses is the Enumerable module, allowing you to iterate over blocks of code with ease, speed, and lots of possibilties.</p>
 
 <p>The enumerable module is so handy when you need to perform the same action on each element in a collection (an array, hash, etc.) Normally, we could do this with a "for" or "while" loop, and there's nothing really wrong with that, but there is a shorter and more concise way </p>
@@ -35,6 +35,7 @@
 <p>If I'm having a sale, and I want to offer 25% off all beers, all I need to write is:</p>
 <div class="pre"><pre>sale_prices = inventory.map { {k => v - (v*0.1) } }</pre></div>
 <p>Before I show you the result, let's break down what all of this means first:</p>
+<p><img src="map method.jpg" width="550" height="80"></p>
 <ol>
   <li><div class="pre"><pre>{|k,v| {k => v - (v*0.1) }}</pre></div></li> is my code block. Here, I signal what elements I'm targeting, and what I'm going to do be doing to them. In this case, I'm targeting my key/value pairs, indicated by the <div class="pre"><pre>|k,v|</pre></div>. I want to reset my values <div class="pre"><pre>v</pre></div> to themselves minus 10% (<div class="pre"><pre> v - (v*.01)</pre></div>)
   <aside>Note: Normally, in a code bloack, you don't need to wrap the behavior you are performing in curly braces, as I did with <div class="pre"><pre>{ {k => v - (v*0.1) } }</pre></div>. Normally, <div class="pre"><pre>.map</pre></div> returns an array, but I want mine to return a hash, since that's what I'm working with. Any other time, you could leave that inner set of curly braces off.</aside>
