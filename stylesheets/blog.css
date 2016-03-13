@@ -14,6 +14,9 @@ header{
 header h1{
   line-height:180%;
 }
+header h2{
+  line-height:180%;
+}
 div{
   background:url(../imgs/topo.png);
   background-size:cover;
@@ -45,9 +48,14 @@ top:3em;
 right:.5em;
 text-align:center;
 border-left:none;
+width:20%;
+}
+#profile img{
+  margin: auto;
 }
 #profile h4{
   font-size:.6em;
+
 
 }
 #profile h5{
@@ -58,6 +66,7 @@ border-left:none;
   height:200px;
 }
 #profile ul{
+
   border-top: 1px solid #333;
   list-style:none;
   padding-left:0;
@@ -79,11 +88,13 @@ border-left:none;
 }
 
 #blogindex ul li{
-  display:block;
+  display:inline-block;
+  width:60%;
   background-color: transparent;
-    border: 3px solid #595959;
+  border-radius:5px;
+    border: 0.5px solid #595959;
     box-sizing: border-box;
-    font-size:1.5em;
+    font-size:3em;
     line-height:40%;
     padding:3%;
     margin:3%;
