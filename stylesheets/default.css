@@ -1,33 +1,102 @@
-html{
-
-position:relative;
-
-
-}
 body{
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  font-family: 'Raleway', sans-serif;
 
-background: linear-gradient(221deg, #d3edac, #d989b4, #97b8ec);
-background-size: 300% 300%;
+}
+body-content{
+  flex: 1;
+}
+h1{
+   font-family: 'Raleway', sans-serif;
+   color:#e50935;;
+}
+p{
+  text-align:center;
+}
 
--webkit-animation: AnimationName 60s ease infinite;
--moz-animation: AnimationName 60s ease infinite;
-animation: AnimationName 60s ease infinite;
+#about{
+  display:flex;
+  justify-content:center;
+  flex-direction:row;
+  flex-wrap:wrap;
+  align-items:center;
+  padding-left:15%;
+  padding-right:15%;
+   padding-top:10%;
+  padding-bottom:10%;
 }
-@-webkit-keyframes AnimationName {
-    0%{background-position:0% 99%}
-    50%{background-position:100% 2%}
-    100%{background-position:0% 99%}
+#about h1{
+  font-size:2em;
 }
-@-moz-keyframes AnimationName {
-    0%{background-position:0% 99%}
-    50%{background-position:100% 2%}
-    100%{background-position:0% 99%}
+#about p{
+  justify-content:center;
 }
-@keyframes AnimationName {
-    0%{background-position:0% 99%}
-    50%{background-position:100% 2%}
-    100%{background-position:0% 99%}
+
+#blog{
+  display:flex;
+  justify-content:center;
+  flex-direction:column;
+  flex-wrap:wrap;
+  align-items:center;
+  padding-left:15%;
+  padding-right:15%;
+  padding-top:10%;
+  padding-bottom:10%;
+  border-bottom: 105px solid #e50935;
+  border-top:105px solid #f7f776;
 }
+#blog h1{
+  font-size:2em;
+}
+#blog ul{
+justify-content:center;
+  font-size:1.5em;
+
+}
+#blog ul li{
+  margin:2%;
+  display:inline-block;
+  box-sizing:border-box;
+  list-style:none;
+  border: 1.75px solid  #e50935;
+  border-radius:8px;
+  padding:20px;
+  text-align:center;
+}
+#blog ul li:hover{
+  background-color:#fffdf2;
+}
+
+ #rainbowcontainer {
+  position: relative;
+  float:left;
+  width: 110px;
+  height: 140px;
+  background: white;
+  overflow: hidden;
+  transform: scale(2);
+
+margin-left:50px;
+  z-index:-3;
+}
+#rainbowcontainer:after {
+  position: absolute;
+  content: '';
+  width: 120px;
+  height: 110px;
+  top: 100px;
+  left: 50px;
+  border-radius: 50%;
+  box-shadow: 0 0 0 8px #82c0ff, 0 0 0 20px #fff, 0 0 0 25px #ffec82, 0 0 0 30px #fff, 0 0 0 35px #fc003a;
+}
+#hero{
+display:flex;
+  width: 100%;
+  height:445px;
+background-image: url("../imgs/bokeh1.jpg");
+background-size:cover;
 }
 
 
@@ -36,98 +105,83 @@ a{
   color:#333;
 }
 
-header{
-  font-family: 'Raleway', sans-serif;
-  font-size:1.65em;
-  line-height:10%;
-  margin:3em;
-  color:#fff;
-}
-
-header h2{
-  width:20%;
-  line-height:120%;
-  font-size:1.4em;
-}
 
 nav{
-
+  margin-top:-25px;
+  width:100%;
+  display:flex;
+padding-top:20px;
+  flex-direction:row;
+  flex-wrap:wrap;
+  justify-content:space-around;
   font-family: 'Raleway', sans-serif;
   font-size:2em;
-  z-index:-3;
-  width:auto;
 
 }
+
+
+
 nav ul{
-margin-left:-1%;
-  padding-left:0;
-  text-align:center;
-  position:relative;
+  flex-direction:row;
+  align-self:flex-end;
 
 }
-#mountain{
-  width:auto;
- position:absolute;
- right:0;
-}
+
 nav ul li{
   list-style:none;
-border:3px solid #fff;
-  border-radius:5px;
-  width:10%;
-  padding:2%;
-  margin-bottom:.3em;
-  text-align:center;
+
   display:inline-block;
-  color:#fff;
+  color:#3f3f3f;
 }
 
-nav ul li:hover{
-  background: #333;
-  color:#fff;
-  transition:0.65s;
-
-}
-nav ul li:hover{
-   width:23%;
-   transition:1s;
-}
-
-nav ul li:hover a{
-  color:#fff;
-  transition: 0.65s;
-}
 
 nav ul li a{
   width:100%;
   text-decoration:none;
-  color: #fff;
+color:#3f3f3f;
 }
-nav ul li a:hover{
-  color: #fff;
 
-}
 
  #social{
-  float:right;
-  width:25%;
+  width:100%;
+display:flex;
+flex-direction:row;
+justify-content:center;
+flex-wrap:wrap;
   list-style:none;
-  padding-left:0;
-text-align:center;
+  padding-bottom:10%;
+
+
+
 }
 
  #social  li{
-  display: inline-block;
-  padding:1%;
-  z-index:5;
+
+  padding:2%;
+
 }
 
 div footer{
-
+  display:flex;
+  justify-content:center;
+text-align:center;
   color:#fff;
-font-size:15px;
+font-size:1.2em;
 position:absolute;
 margin-bottom:0;
 
 }
+footer #sym{
+  font-size:2em;
+  color:#5abcf4;
+}
 
+#up{
+position:absolute;
+  text-decoration:none;
+  font-size:2.75em;
+}
+
+#up a{
+  color:#727171;
+}
