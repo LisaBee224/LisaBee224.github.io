@@ -50,12 +50,27 @@ p{
 #blog h1{
   font-size:2em;
 }
-#blog ul{
+#projects{
+  display:flex;
+  justify-content:center;
+  flex-direction:column;
+  flex-wrap:wrap;
+  align-items:center;
+  padding-left:15%;
+  padding-right:15%;
+  padding-top:10%;
+  padding-bottom:10%;
+  border-bottom:105px solid #aae2ff;
+}
+#projects h1{
+  font-size:2em;
+}
+.index{
 justify-content:center;
   font-size:1.5em;
 
 }
-#blog ul li{
+.index li{
   margin:2%;
   display:inline-block;
   box-sizing:border-box;
@@ -65,7 +80,7 @@ justify-content:center;
   padding:20px;
   text-align:center;
 }
-#blog ul li:hover{
+.index li:hover{
   background-color:#fffdf2;
 }
 
