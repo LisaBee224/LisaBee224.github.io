@@ -1,4 +1,5 @@
 body{
+  margin-left:0;
   display: flex;
   min-height: 100vh;
   flex-direction: column;
@@ -135,10 +136,10 @@ padding-top:20px;
 }
 
 
-
 nav ul{
   flex-direction:row;
   align-self:flex-end;
+  margin-left:18%;
 
 }
 
@@ -149,12 +150,14 @@ nav ul li{
   color:#3f3f3f;
 }
 
-
-nav ul li a{
-  width:100%;
-  text-decoration:none;
-color:#3f3f3f;
+nav ul li a:hover > li {
+  display:block;
 }
+nav ul li li {
+display:none;
+
+}
+
 
 
  #social{
