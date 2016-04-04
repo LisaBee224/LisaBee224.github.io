@@ -13,7 +13,7 @@
 <body>
   <main>
     <header class = "entryheader">
- <h3><a href="index.html">back to index</a></h3>
+ <h3><a href="../index/.html#blog">back to index</a></h3>
     <h1>computer memory</h1>
     <h2>01101000 01101001 </h2>
     <date>April 3, 2016</date>
@@ -45,7 +45,7 @@
 
 <p>A computer's memory is what holds all of the programs and data that are used by your computer's <b>processor</b>. A <b>processor</b> is what carries out the millions of lines of code that execute programs, the operating system on your computer, etc. When you want to work on something, let's say a sleek Ruby program you're writing, your processor has to pull the file from your hard drive (or flash drive), and store it in memory. </p>
 
-<p>All things, even complex programs and applications, exist in a computer's memory as numbers-- specifically 1's and 0's which make up the <b>binary system</b> (by the way, the subtitle to this post "01101000 01101001" is just "hi" in binary!) A computer's memory has millions and millions of electronic switches called <b>transistors</b> that are flipped on and off when a program is run (really, it's an electrical current that flips them on and off). Switching a transister "on" stores a 1. Switching one "off" stores a 0. When you think about the complexity of some of the applications we use on our computers, and the thousands of lines of code that comprise them, the fact that it all comes down to 1's and 0's is truly remarkable. </p>
+<p>All things, even complex programs and applications, exist in a computer's memory as numbers-- specifically 1's and 0's which make up the <b>binary system</b> (by the way, the subtitle to this post "01101000 01101001" is just "hi" in binary!) A computer's memory has millions and millions of electronic switches called <b>transisters</b> that are flipped on and off when a program is run (really, it's an electrical current that flips them on and off). When you think about the complexity of some of the applications we use on our computers, and the thousands of lines of code that comprise them, the fact that it all comes down to 1's and 0's is truly remarkable. </p>
 
 <p>It's easy to get elbows-deep in binary, specifically the math behind it, but let's get back to how it relates to a computer's memory. We know that data exists in a computer's memory as binary numbers. But how are these numbers organized? Much like we might organize students' names in a class, or shopping list items in an array in a program, a computer's memory is organized in a similar fashion. If you think of a computer's memory as a giant array, each binary number is like an element in the array, and is called a <b>memory location.</b> In an array, each element has an index, indicating it's position in the array. A memory location in a computer's memory has an <b>address</b>. The smallest unit of memory in a computer is a <b>bit</b>, which is represented by either a 1 or a 0. Most computer memories actually work with <b>bytes</b> which are eight bits organized together.</p>
   <aside>1 byte = 8 bits.</aside>
@@ -55,7 +55,7 @@
 
   <p>We talked about bits being organized into bytes, but bytes can also be grouped into <b>words</b>, which allow computers to store more information in a single place. This allows more information to be retrieved more quickly, as well, since the computer doesn't need to look into as many separate bytes to gather what it's looking for.</p>
 
-<p>Back to RAM and ROM. The vast majority of work you do on a computer is pulled from, and written to, your computer's RAM. The ROM is mostly used to store and execute code that allows the computer to do a basic boot-up. After that, the operating system, applications on your computers, code libraries, etc., are all pulled from your RAM. It's important to note that RAM is volatile, which means that a computer remembers things in RAM only when it has power. When the power goes off, a computer can't remember what's stored in RAM. ROM is non-volatile-- it contains code pre-programmed and stores the BIOS (basic input/output system) that operates your screen and keyboard.</p>
+<p>Back to RAM and ROM. The vast majority of work you do on a computer is pulled from, and written to, your computer's RAM. The ROM is mostly used to store and execute code that allows the computer to do a basic boot-up. After that, the operating system, applications on your computers, code libraries, etc., are all pulled from your hard drive onto your RAM, where they wait to be executed. It's important to note that RAM is volatile, which means that a computer remembers things in RAM only when it has power. When the power goes off, a computer can't remember what's stored in RAM. ROM is non-volatile-- it contains code pre-programmed and stores the BIOS (basic input/output system) that operates your screen and keyboard.</p>
 
 <p>There are so many different facets that make up the whole of a computer's memory, including caches, logic gates, DRAM, SRAM, etc., and it's easy to find yourself down one of these rabbit holes. The low-level inner workings of a computer's memory isn't always relevant to a high-level programmer's work, but becoming well-versed in a couple of these areas is never a bad idea!
 
