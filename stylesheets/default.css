@@ -9,13 +9,19 @@ body{
 body-content{
   flex: 1;
 }
-h1{
-   font-family: 'Raleway', sans-serif;
-   color:#e50935;;
+#head{
+   font-family: 'Comfortaa', cursive;
+   font-size:1.2em;
+   color:#e0a1a1;
 }
-p{
-  text-align:center;
+#sub{
+  font-family: 'Raleway', sans-serif;
+  font-size:.5em;
+  color:#edbbbb;
+  margin-top:-3%;
+
 }
+
 
 #about{
   display:flex;
@@ -88,8 +94,8 @@ justify-content:center;
  #rainbowcontainer {
   position: relative;
   float:left;
-  width: 110px;
-  height: 140px;
+  width: 100px;
+  height: 120px;
   background: white;
   overflow: hidden;
   transform: scale(2);
@@ -102,10 +108,10 @@ margin-left:50px;
   content: '';
   width: 120px;
   height: 110px;
-  top: 100px;
-  left: 50px;
+  top: 80px;
+  left: 30px;
   border-radius: 50%;
-  box-shadow: 0 0 0 8px #82c0ff, 0 0 0 20px #fff, 0 0 0 25px #ffec82, 0 0 0 30px #fff, 0 0 0 35px #fc003a;
+  box-shadow: 0 0 0 5px #82c0ff, 0 0 0 12px #fff, 0 0 0 16px #ffec82, 0 0 0 22px #fff, 0 0 0 25px #fc003a;
 }
 #hero{
 display:flex;
@@ -123,8 +129,11 @@ a{
 
 
 nav{
+  background-image:url("../imgs/bokeh1.jpg");
+  background-size:cover;
   margin-top:-25px;
   width:100%;
+  height:600px;
   display:flex;
 padding-top:20px;
   flex-direction:row;
@@ -138,7 +147,7 @@ padding-top:20px;
 
 nav ul{
   flex-direction:row;
-  align-self:flex-end;
+  align-self:flex-start;
   margin-left:18%;
 
 }
@@ -150,15 +159,25 @@ nav ul li{
   color:#3f3f3f;
 }
 
-nav ul li a:hover > li {
-  display:block;
-}
-nav ul li li {
-display:none;
+.overlay span{
+position:absolute;
+font-size:.75em;
+
+margin:-3%;
+opacity: 0;
+transition: opacity .35s ease;
+transform: translateY(0, -30px) 2s ease;
+
 
 }
 
 
+
+nav ul li:hover .overlay span{
+  opacity: 1;
+color:#7c7c7c;
+
+}
 
  #social{
   width:100%;
