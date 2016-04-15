@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href='https://fonts.googleapis.com/css?family=Raleway:300' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gist-embed/2.4/gist-embed.min.js"></script>
+
+<title>
+  Lisa Buch's DBC blog
+  </title>
+</head>
+
+<body>
+  <main>
+    <header class = "entryheader">
+ <h3><a href="index.html">back to index</a></h3>
+
+<h1>shuffling arrays in Ruby</h1>
+    <h2>do the Ruby shuffle</h2>
+    <date>April 12, 2016</date>
+    <section id="profile">
+      <img src="../imgs/lisablog.png">
+      <h4>Lisa Buch</h4>
+      <h5><a href="../index.html" target="_blank">view my portfolio</a></h4>
+          <ul><h4>recent posts</h4>
+ <li><a href="roman_numerals.html" target="_blank">converting to roman numerals</a></li>
+    <li><a href="JavaScript.html" target="_blank">javascript objects and arrays</a></li>
+    <li><a href="mapmethod.html" target="_blank">map method</a></li>
+
+
+  </ul>
+    </section>
+    </header>
+  <section>
+
+<p>If you ever want to try to understand, or at least really appreciate what goes in to Ruby's beautiful built-in methods, try writing your own! Today I attempted to write a custom shuffle method in Ruby. While I certainly cannot guarantee this is how .shuffle() actually works, it gets the job done. </p>
+
+<p>The first thing that comes to mind when I think of shuffling a collection of information, is "random." We're taking a set of data, whether it's numbers, names, etc., and rearraging the items in the set in RANDOM order. Utilizing Ruby's rand() method will be really important to us in this sense. To start, I create a method called "shuffle," which takes an array. Since I have a feeling that random numbers are going to come into play for the method, I initialize an empty array called random_nums, as seen below. </p>
+<script src="https://gist.github.com/LisaBee224/a94e9c3ce8abdd684fdf40d46485e6a7.js"></script>
+<p>
+<p>Think about shuffling an array as taking all of its elements and putting them in random positions in a new array. Therefore, the random numbers that we're about to generate could be considered the NEW INDICES that the original elements of our array will get in a NEW ARRAY.   </p>
+
+<p>I create an empty array to store my randomly-generated numbers in. We need to have the same amount of random numbers (random indices) that are in our original array, and we'll need to make sure that we don't generate the same number twice, since each number in the original array (and new, shuffled array) will need to have a unique index. I've also made a copy of my original array with my .dup method (the reason for which will become clear in the next step). Here's what my code looks like now.   </p>
+<script src="https://gist.github.com/LisaBee224/c65099fe29d38228a4a6bdbae70fe1c1.js"></script>
+
+<p></p>
+
+<p>Now that I've got my array of randomly-generated (but within range) index numbers, the fun can start. I'll set a count to 0, and iterate over my original array with .each. In each iteration:<br> I take a number from my random_nums array at index [count]. <br><br>
+I grab the element in the copy of my original array at this index, and re-assign it to the element at index[count] of my original array. <br><br>
+I increment the count and start again.<br><br>Here's what my code looks like now.   </p>
+<script src="https://gist.github.com/LisaBee224/63cef5c25ee7b82a9dfbb7aa6ee90f9d"></script>
+<p>I don't know about you, but I think this is pretty exciting. This method will work no matter what your array size is or what kinds of elements it holds. Now go forth and shuffle!</p>
+
+
+
+</main>
+
+<section id="resources"><h3>Helpful links:</h3>
+<a href="https://en.wikipedia.org/wiki/Fisher%E2%80%93Yates_shuffle">Fisher-Yates shuffle <h4>back</h4></a>
+
+
+<a href="index.html">< go back</a>
+
+      </section>
+
+  </body>
+  </html>
