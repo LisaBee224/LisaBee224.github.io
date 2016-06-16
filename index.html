@@ -1,120 +1,161 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-<link href='https://fonts.googleapis.com/css?family=Raleway:300' rel='stylesheet' type='text/css'>
-<link rel="stylesheet" type="text/css" href="stylesheets/default.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-<link href='https://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet' type='text/css'>
-<title>LISA BUCH</title>
-  </head>
 
-  <body>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-  <nav>
+    <title>Lisa Buch</title>
 
-    <h1 id="head">LISA BUCH<br><span id="sub">web development<br>design<br>illustration</span></h1>
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/grayscale.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Radley:400,400italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-custom navbar-fixed-top menu" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                   <a class="navbar-brand page-scroll" href="#page-top"><img src="img/home.png" width="35" height="35"/>
+                </a>
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    <i class="fa fa-bars"></i>
+                </button>
+
+            </div>
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                <ul class="nav navbar-nav">
+
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+
+                    <li>
+                        <a class="page-scroll" href="#about">About</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#download">Work</a>
+                    </li>
+                     <li>
+                        <a class="page-scroll" href="https://resume.creddle.io/resume/cgqx6xeetwj" target="_blank">Resume</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Intro Header -->
+    <header class="intro">
+        <div class="intro-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h1 class="brand-heading">Lisa Buch</h1>
+                        <p class="intro-text"><i>full-stack developer, designer, dog fanatic</i></p>
+                        <a href="#about" class="btn btn-circle page-scroll">
+                            <i class="fa fa-angle-double-down animated"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="container content-section text-center">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                                <p><img src="img/LOGO.png" width="100" height="100"/></p>
+
+                <h2>about</h2>
+                <p>I'm a developer and designer living and rock climbing in Brooklyn, NY,</p>
+                <p>JavaScript, Rails, AngularJS, and yellow labs make my heart sing.</p>
+                <p>I'm always on the lookout for new opportunities, so please <a class="page-scroll" href="#contact">get in touch!</a></p>
+                <p>You can find my design work <a href="http://lkbdesign.com" target="_blank">here,</a></p>
+            </div>
+        </div>
+    </section>
 
 
-    <ul>
+    <section id="download" class="content-section text-center">
+        <div class="download-section">
+            <div class="container">
 
+                    <h2>work</h2>
+                    <ul>
+                    <li><img src="img/mockup_mb.png" width="280" height="200"/><br><a href="http://lisabee224.github.io/d3-personality-viz/" target="_blank">Personality-Viz</a><br><p><span class="desc">Interactive data visualization of personality types <br><i>(D3.js, JavaScript, jQuery)<br><a href="https://github.com/LisaBee224/d3-personality-viz" target="_blank">source code</a></span></p></i></li>
+                     <li><img src="img/desktop_mockup.png" width="280" height="200"/><br><a href="make-together.herokuapp.com" target="_blank">MakeTogether</a><span class="desc"><br><p><span class="desc">Social media platform allowing developers and designers to collaborate on projects<br><i>(Ruby on Rails, JavaScript, JQuery, AJAX)<br><a href="https://github.com/mindplace/make-together" target="_blank">source code</a></i></span></p></li></li>
+                    <li><img src="img/mockup_256.png" width="280" height="200"/><br><a href="" target="_blank">256</a><br><p><span class="desc">A clone of the popular game 2048-users win when they reach the 256 tile. <i>(JavaScript,jQuery)<br><a href="https://github.com/LisaBee224/256-game" target="_blank">source code</a></span></p></i></li>
+                </ul>
 
-      <li><span class="overlay"><span>blog &#8628;</span></span><a href="#blog"><img src="imgs/pooch1.png"></li>
+            </div>
+             <div id="download-bg">
 
-      <li><span class="overlay"><span>projects&#8628;</span></span><a href="#projects"><img src="imgs/pooch2.png"></a></li>
-      <li><span class="overlay"><span>about&#8628;</span></span><a href="#about"><img src="imgs/pooch3.png"></a></li>
-      <li><span class="overlay"><span>contact&#8628;</span></span><a href="#contact"><img src="imgs/pooch4.png"></a></li>
-    </ul>
+            </div>
+        </div>
+    </section>
 
-      </nav>
+    <section id="contact" class="container content-section text-center">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+<span class="glyphicon glyphicon-envelope" id="mail"></span>
+                <h2>contact</h2>
+                <p id="email"><a href="mailto:feedback@startbootstrap.com">
 
- <section>
-      <ul id="social">
+                    lisakbuch@gmail.com</a>
+                </p>
+                <ul class="list-inline banner-social-buttons">
+                    <li>
+                        <a href="https://github.com/LisaBee224" target="_blank"><img src="../img/github_grey.png" width="100" height="100"></a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/lisabuch"><img src="../img/linkedin_grey.png" width="100" height="100"></a><span class="light"></span>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/lkbmakes/"><img src="../img/instagram_grey.png" width="100" height="100"></a><span class="light"></span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
 
-      <li><a href="https://github.com/LisaBee224?tab=repositories" target="_blank"><img src="imgs/github.png" height="50" width="50" alt="github"></a></li>
-      <li><a href="https://www.linkedin.com/in/lisabuch" target="_blank"><img src="imgs/linkedin.png" height="50" width="50" alt="linkedin"></a></li>
-      <li><a href="https://www.behance.net/lb155edc6" target="_blank"><img src="imgs/behance.png" height="50" width="50" alt="behance"></a></li>
-      <li><a href="https://www.instagram.com/lkbmakes/" target="_blank"><img src="imgs/insta.png" height="50" width="50" alt="instagram"></a></li>
-       <li><a href="http://www.lkbdesign.com/" target="_blank"><img src="imgs/logo.png" height="50" width="50" alt="lkbdesign"></a></li>
-    </ul>
+    <footer>
+        <div class="container text-center">
+            <p>Copyright &copy; Lisa Buch 2016</p>
+        </div>
+    </footer>
 
-</section>
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
 
-<section id="blog">
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
 
-<h1>blog posts</h1>
+    <!-- Plugin JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
 
+    <!-- Custom Theme JavaScript -->
+    <script src="js/grayscale.js"></script>
 
-  <ul class="index">
-<a href="blog/git.html"><li>git, gitHub, and version control</li></a>
-<a href="blog/css-concepts.html"><li>css concepts</li></a>
-<a href="blog/arrays-hashes.html"><li>arrays v. hashes</li></a>
-<a href="blog/mapmethod.html"><li>.map method</li></a>
-<a href="blog/ruby-classes.html"><li>ruby classes</li></a>
-<a href="blog/JavaScript.html"><li>javascript objects v. ruby hashes</li></a>
-<a href="blog/memory.html"><li>computer memory</li></a>
-<a href="blog/roman_numerals.html"><li>converting an integer to roman numerals</li></a>
-<a href="blog/shuffle_method.html"><li>random shuffle method</li></a>
-
-</ul>
-</section>
-
-<section id="projects">
-  <h1>projects</h1>
-  <ul class="index">
-  <li><a href="https://github.com/LisaBee224/phase0/blob/master/week-7/game/test.js" target="_blank">french verb conjugation game</a></li>
-   <li><a href="https://github.com/LisaBee224/phase0/blob/master/week-7/game/game.js" target="_blank">random snack generator</a></li>
- </ul>
-
-  </section>
-
-  <section id="about">
-
-<h1>about</h1>
-
-   <p>I'm always making, learning, and daydreaming. When I'm not working on a project, you can find me swimming, rock climbing, making messes in the kitchen, and petting dogs that I wish were mine. The only thing I'm afraid of are frogs and toads.</p>
-
-  <p><b>Currently exploring</b> &rarr; Ruby and SQL at Dev Bootcamp NYC</p>
-  <p><b>Trails well traveled</b> &rarr; JavaScript, jQuery, CSS3, SASS, AngularJS, the MEAN Stack</p>
-  <p><b>Tools I use every day</b> &rarr; Adobe CS6, GitHub, coffee, and news podcasts</p>
-
-  <p>Check out some of my creative projects <a href="http://lkbdesign.com" target="_blank">here</a> and on <a href="https://www.instagram.com/lkbmakes/" target="_blank">@lkbmakes</a>
-
-
-  </section>
-
-  <section id="contact">
-
-  </section>
-
-  <footer><span id="sym">&#9731;</span> by Lisa Buch</footer>
-<script>
-$(document).ready(function(){
-  $('a[href^="#"]').on('click',function (e) {
-      e.preventDefault();
-
-      var target = this.hash;
-      var $target = $(target);
-
-      $('html, body').stop().animate({
-          'scrollTop': $target.offset().top
-      }, 1000, 'swing', function () {
-          window.location.hash = target;
-      });
-  });
-});
-</script>
-
-<script>
-  $(function(){
-      $(".typer").typed({
-        strings: ["web developer."],
-        typeSpeed: 0
-      });
-  });
-</script>
-...
-
-<div class="element"></div>
 </body>
 
 </html>
