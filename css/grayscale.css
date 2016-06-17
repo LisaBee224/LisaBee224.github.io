@@ -60,6 +60,10 @@ li p{
     font-size:2em;
 }
 
+.cv{
+    background-color:#00BD9D;
+}
+
 @media(min-width:768px) {
     p {
         margin: 0 0 35px;
