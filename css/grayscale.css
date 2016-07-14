@@ -317,9 +317,10 @@ a:focus {
     }
 
     .intro .intro-body .brand-heading {
-        font-size: 150px;
+        font-size: 180px;
         opacity:1;
         margin-top:20%;
+
 
     }
 
@@ -337,6 +338,7 @@ a:focus {
     border: 2px solid #000;
     border-radius: 100%!important;
     font-size: 40px;
+    padding-bottom:5%;
 
     background: 0 0;
     -webkit-transition: background .3s ease-in-out;
